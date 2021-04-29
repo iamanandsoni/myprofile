@@ -1,7 +1,11 @@
-	function openNav(){
-		document.getElementById("mySidepanel").style.width = "60%";
-	}
+$(function() {
+    $('#HomePageModal').modal('show');
+});
 
-	function closeNav(){
-		document.getElementById("mySidepanel").style.width = "0px";
-	}
+
+// Product Detail Gallery
+function myFunction(imgs) {
+	var expandImg = document.getElementById("expandedImg");
+	expandImg.src = imgs.src;
+	expandImg.parentElement.style.display = "block";
+}
